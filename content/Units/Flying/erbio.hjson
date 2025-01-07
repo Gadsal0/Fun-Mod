@@ -1,0 +1,85 @@
+# info
+name: "Erbio"
+description:"Flying T1 unit from the purpler family!, it has 2 laser guns, and 2 sap guns, includes a rocket launcher!"
+# main
+type: flying
+health:5000
+speed:4
+hitsize:5
+flying:true
+omnimovement:false
+layeroffset:-1
+# trail
+trailcolor: 6107b5
+traillength:5
+# engine color
+enginesize:2.8
+engineoffset:7
+enginecolor: aa4dff
+# weapons
+weapons: [
+
+       {name:Purpling-Laser-Gun
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 5
+       y: -1.5
+       shootSound: Purpling-Laser
+       reload:30
+       bullet: {
+        type: LaserBulletType
+        colors: [c78dfc,aa4dff,8500ff]
+        speed: 2
+        lifetime: 10
+        damage: 250
+        width: 10
+        length: 350
+        hitEffect: hitLancer
+        }} 
+
+        {name:Purpling-Sap-Gun
+       rotate:true
+       shootCone: 140
+       mirror: true
+       shootEffect: none 
+       x: 3.5
+       y: -1.5
+       shootSound: Purpling-Laser
+       reload:30
+       bullet: {
+            type: SapBulletType
+            damage: 50
+            color:c78dfc
+            length: 250
+            width: 0.6
+            sapstrength:1
+        }} 
+
+{
+      name: Purpling-Rocket-Launcher
+      x: 3
+      y: -1
+      targetAir: false
+      targetGround: true
+      mirror: true
+      rotate: false
+      shootCone: 200
+      baserotation:-45
+      shootEffect: "missileTrail"
+      layerOffset: 1
+      targetAir: false
+      targetGround: true
+      ignoreRotation: true
+      followRotation: true
+      rotateShooting: false
+      reload: 450
+      recoil: 1.7
+      shootSound: "missileSmall"
+      bullet: {
+        type: MissileBulletType
+        spawnUnit: Purpler
+      }}
+
+]
