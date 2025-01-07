@@ -1,9 +1,0 @@
-name: "Fun-Mod"
-displayName: ":3"
-author: Gadsal0
-description: "oh no"
-version: "1.0"
-minGameVersion: "146"
-dependencies: [ ]
-repo:"Gadsal0/Fun-Mod"
-hidden: false
